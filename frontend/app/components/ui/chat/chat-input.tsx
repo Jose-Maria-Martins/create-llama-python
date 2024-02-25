@@ -19,13 +19,15 @@ export default function ChatInput(props: ChatInputProps) {
     <>
       <form
         onSubmit={props.handleSubmit}
-        className="flex items-start justify-between w-full max-w-5xl p-4 bg-white rounded-xl shadow-xl gap-4"
+        className="flex items-start justify-between w-full max-w-5xl p-4 rounded-xl shadow-xl gap-4" 
+        style={{ backgroundColor: '#000000' }}
       >
         <input
           autoFocus
           name="message"
           placeholder="Type a message"
-          className="w-full p-4 rounded-xl shadow-inner flex-1"
+          className="w-full p-4 rounded-xl text-white shadow-inner flex-1"
+          style={{ backgroundColor: '#393939' }}
           value={props.input}
           onChange={props.handleInputChange}
         />
